@@ -12,6 +12,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Character Selection.unity
     guid: 89188394c8f30b74c843d432cb0d2284
   - enabled: 1
+    path: Assets/Scenes/World Selection.unity
+    guid: 69c34cc95475a7d409c7d5d1a095d81f
+  - enabled: 1
+    path: Assets/Scenes/World Scenes/Beach.unity
+    guid: 2d50738b7c8bca24c89b91e0533b2b41
+  - enabled: 1
+    path: Assets/Scenes/World Scenes/Desert.unity
+    guid: 68cd846e17f5e1a439cc40e3c8cda283
+  - enabled: 1
+    path: Assets/Scenes/World Scenes/Forest.unity
+    guid: e565fedb1ca560e47a0c35dcb3fa74d6
+  - enabled: 1
+    path: Assets/Scenes/World Scenes/Road.unity
+    guid: f55f877be4a86244c99a6496bdee664c
+  - enabled: 1
+    path: Assets/Scenes/World Scenes/Snow.unity
+    guid: ef0f8cdcb259daa4eb53a887eef5620e
+  - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: 6a2e84a4df09cf547bb4bc3e8765fa2e
   m_configObjects: {}

@@ -1,13 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterSelection : MonoBehaviour
 {
     public CharacterSelector[] selectableCharacters;
 
     private GameObject currentCharacter;
-    private int characterIndex;
+    public int characterIndex;
+
+    private void Awake()
+    {
+        characterIndex = PlayerPrefs.GetInt("characterIndex", characterIndex);
+    }
 
     private void Start()
     {
@@ -38,6 +44,12 @@ public class CharacterSelection : MonoBehaviour
             characterIndex = 0;
         }
         SwitchCharacters();
+    }
+
+    public void Play()
+    {
+        PlayerPrefs.SetInt("characterIndex", characterIndex);
+        FindObjectOfType<SceneController>().LoadNextScene();
     }
 
     [System.Serializable]
