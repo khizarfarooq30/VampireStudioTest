@@ -31,7 +31,12 @@ public class WorldController : MonoBehaviour
         if(worldUnlocked < currentSceneIndex)
         {
             PlayerPrefs.SetInt("WorldUnlocked", worldUnlocked);
-            FindObjectOfType<LevelController>().LoadNextWorld(currentSceneIndex + 1);
+            Invoke("LoadNext", 1f);
         }
+    }
+
+    void LoadNext()
+    {
+        SceneManager.LoadScene(currentSceneIndex + 1);
     }
 }

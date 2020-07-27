@@ -8,14 +8,10 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody2D rb;
     Vector2 movement;
-    Animator anim;
-    GameObject player;
-
+    
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 

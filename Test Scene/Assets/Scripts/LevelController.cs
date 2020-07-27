@@ -27,18 +27,20 @@ public class LevelController : MonoBehaviour
         switch (worldUnlocked)
         {
             case 1:
+            case 2:
+            case 3:
                 forest.interactable = true;
                 break;
-            case 2:
+            case 4:
                 forest.interactable = true;
                 road.interactable = true;
                 break;
-            case 3:
+            case 5:
                 forest.interactable = true;
                 road.interactable = true;
                 beach.interactable = true;
                 break;
-            case 4:
+            case 6:
                 forest.interactable = true;
                 road.interactable = true;
                 beach.interactable = true;
