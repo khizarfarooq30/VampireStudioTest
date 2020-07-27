@@ -47,7 +47,7 @@ public class LevelController : MonoBehaviour
         }
     }
 
-   public void LoadNextWorld(String world)
+   public void LoadNextWorld(int world)
     {
         SceneManager.LoadScene(world);
     }

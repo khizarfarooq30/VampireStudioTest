@@ -150,7 +150,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &61590382
 MonoBehaviour:
@@ -232,7 +232,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &217828332
 GameObject:
@@ -317,11 +317,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 61590382}
         m_MethodName: LoadNextWorld
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: Beach
           m_BoolArgument: 0
@@ -445,11 +445,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 61590382}
         m_MethodName: LoadNextWorld
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: Forest
           m_BoolArgument: 0
@@ -530,59 +530,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &638083995
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 638083997}
-  - component: {fileID: 638083996}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &638083996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638083995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7e9445fc5f47854a85b9f8baf040f2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectableCharacters:
-  - character: {fileID: 2358143710878913369, guid: 9bd4cccc09cadda4c913bfde455433f4,
-      type: 3}
-  - character: {fileID: 791648866504056456, guid: c87888ec85624864a81a2dfcca2d991f,
-      type: 3}
-  - character: {fileID: 2997004827429548587, guid: 5f1fac0291e174e408c5af2622087732,
-      type: 3}
-  - character: {fileID: 8996359076402205211, guid: f29ab7d0f0b243849a8338c7d7cbdb6b,
-      type: 3}
-  characterIndex: 0
---- !u!4 &638083997
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638083995}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5, y: 2.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1047215579
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,11 +848,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 61590382}
         m_MethodName: LoadNextWorld
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: Road
           m_BoolArgument: 0
@@ -1040,7 +987,7 @@ RectTransform:
   - {fileID: 1073760040}
   - {fileID: 516256168}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1130,11 +1077,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 61590382}
         m_MethodName: LoadNextWorld
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: Snow
           m_BoolArgument: 0
@@ -1258,11 +1205,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 61590382}
         m_MethodName: LoadNextWorld
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: Desert
           m_BoolArgument: 0
