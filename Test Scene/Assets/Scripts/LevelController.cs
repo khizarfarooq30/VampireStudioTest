@@ -13,7 +13,7 @@ public class LevelController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        worldUnlocked = PlayerPrefs.GetInt("WorldUnlocked");
+        worldUnlocked = PlayerPrefs.GetInt("WorldUnlocked", worldUnlocked);
         forest.interactable = false;
         road.interactable = false;
         beach.interactable = false;
@@ -26,8 +26,6 @@ public class LevelController : MonoBehaviour
     {
         switch (worldUnlocked)
         {
-            case 1:
-            case 2:
             case 3:
                 forest.interactable = true;
                 break;
@@ -53,5 +51,13 @@ public class LevelController : MonoBehaviour
     {
         SceneManager.LoadScene(world);
     }
- 
+
+    public void ResetUnlockLevels()
+    {
+        forest.interactable = false;
+        road.interactable = false;
+        beach.interactable = false;
+        snow.interactable = false;
+        PlayerPrefs.DeleteAll();
+    }
 }

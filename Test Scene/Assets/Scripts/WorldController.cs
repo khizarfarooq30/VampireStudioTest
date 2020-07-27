@@ -13,30 +13,37 @@ public class WorldController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(instance != null)
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        worldUnlocked = PlayerPrefs.GetInt("WorldUnlocked");
+
+        if (instance != null)
         {
             Destroy(gameObject);
         } else
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
-
-        worldUnlocked = PlayerPrefs.GetInt("WorldUnlocked");
-        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
     public void UnlockNextWorld()
     {
-        if(worldUnlocked < currentSceneIndex)
+        if (currentSceneIndex == 7)
+            Invoke("LoadMainMenu", 1f);
+        else
         {
-            PlayerPrefs.SetInt("WorldUnlocked", worldUnlocked);
-            Invoke("LoadNext", 1f);
+            if (worldUnlocked < currentSceneIndex)
+                PlayerPrefs.SetInt("WorldUnlocked", currentSceneIndex);
+                Invoke("UnlockNext", 1f);
         }
     }
 
-    void LoadNext()
+    void UnlockNext()
     {
-        SceneManager.LoadScene(currentSceneIndex + 1);
+        SceneManager.LoadScene(2);
+    }
+
+    void LoadMainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
     }
 }

@@ -8,7 +8,7 @@ public class LevelProgresser : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            FindObjectOfType<WorldController>().UnlockNextWorld();
+            WorldController.instance.UnlockNextWorld();
         }
     }
 }
