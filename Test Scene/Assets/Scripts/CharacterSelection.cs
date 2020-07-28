@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class CharacterSelection : MonoBehaviour
 {
@@ -17,32 +19,46 @@ public class CharacterSelection : MonoBehaviour
 
     private void Start()
     {
+        
         SwitchCharacters();
+
     }
 
-    private void SwitchCharacters()
+    public void SwitchCharacters()
     {
         Destroy(currentCharacter, 0f);
         currentCharacter = Instantiate(selectableCharacters[characterIndex].character, transform.position, transform.rotation, transform);
     }
 
-    public void LeftButton()
+    public void BlueMan()
     {
-        characterIndex--;
-        if(characterIndex < 0)
-        {
-            characterIndex = selectableCharacters.Length - 1;
-        }
+
+        characterIndex = 0;
+
         SwitchCharacters();
     }
 
-    public void RightButton()
+    public void GreenMan()
     {
-        characterIndex++;
-        if (characterIndex == selectableCharacters.Length)
-        {
-            characterIndex = 0;
-        }
+
+        characterIndex = 1;
+
+        SwitchCharacters();
+    }
+
+    public void RedMan()
+    {
+
+        characterIndex = 2;
+
+        SwitchCharacters();
+    }
+
+    public void WhiteMan()
+    {
+
+        characterIndex = 3;
+
         SwitchCharacters();
     }
 

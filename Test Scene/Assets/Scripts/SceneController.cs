@@ -19,6 +19,11 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
+    public void LoadCharacterSelection()
+    {
+        SceneManager.LoadScene(1);
+    }
+
     public void LoadWorldSelectionScreen()
     {
         SceneManager.LoadScene(2);

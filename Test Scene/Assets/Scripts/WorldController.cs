@@ -26,15 +26,15 @@ public class WorldController : MonoBehaviour
     }
 
     public void UnlockNextWorld()
-    {
-        if (currentSceneIndex == 7)
-            Invoke("LoadMainMenu", 1f);
-        else
-        {
-            if (worldUnlocked < currentSceneIndex)
-                PlayerPrefs.SetInt("WorldUnlocked", currentSceneIndex);
-                Invoke("UnlockNext", 1f);
-        }
+    {    
+            if (currentSceneIndex == 7)
+                Invoke("LoadMainMenu", 1f);
+            else
+            {
+                if (worldUnlocked < currentSceneIndex)
+                    PlayerPrefs.SetInt("WorldUnlocked", currentSceneIndex);
+                    Invoke("UnlockNext", 0.5f);
+            }
     }
 
     void UnlockNext()
